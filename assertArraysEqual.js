@@ -13,11 +13,6 @@ const assertEqual = function (actual, expected) {
 };
 
 const eqArrays = function (array1, array2) {
-  // determining if both arrays are not equal in length
-  if (array1.length !== array2.length) {
-    return false;
-  }
-
   // determining if each of the elements (either number or string) are not the same
   for (let i = 0; i <= array1.length; i++) {
     if (array1[i] !== array2[i]) {
@@ -29,7 +24,16 @@ const eqArrays = function (array1, array2) {
   return true;
 };
 
+const assertArraysEqual = function (array1, array2) {
+  // determining if both arrays are not equal in length
+  if (array1.length !== array2.length) {
+    return false;
+  }
+  return true;
+};
+
 ////////////////////////////////////////////////////
+
 console.log("-----------------------------------");
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 console.log("-----------------------------------");
