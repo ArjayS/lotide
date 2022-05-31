@@ -1,17 +1,32 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-    console.log(
-      `The type of operand for actual is a ${typeof actual}, and the type of operand for expected is ${typeof expected}`
-    );
-  } else {
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
-    console.log(
-      `The type of operand for actual is a ${typeof actual}, and the type of operand for expected is ${typeof expected}`
-    );
+const countLetters = function (sentence, lettersToCount) {
+  emptyObject = {};
+  for (const letter of sentence) {
+    if (lettersToCount[letter]) {
+      if (emptyObject[letter]) {
+        // if (emptyObject[letter] !== "") { //DOES NOT WORK
+        emptyObject[letter] += 1;
+      } else {
+        emptyObject[letter] = 1;
+      }
+    }
   }
+  return emptyObject;
 };
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
 
-const countLetters = function () {};
+const sentenceInQuestion = "lighthouse in the house";
+
+const result1 = countLetters(sentenceInQuestion, {
+  l: true,
+  i: true,
+  g: true,
+  h: true,
+  t: true,
+  o: true,
+  u: true,
+  s: true,
+  e: true,
+  n: true,
+  "": false,
+});
+
+console.log(result1);
