@@ -60,3 +60,5 @@ console.log(assertArraysEqual(results2, ["I've", "been", "to", "Hollywood"]));
 // [ 1, 2, 5, 7, 2 ]
 // --
 // [ 'I\'ve', 'been', 'to', 'Hollywood' ]
+
+//Stackoverflow guide: https://stackoverflow.com/questions/26568536/remove-all-items-after-an-index
