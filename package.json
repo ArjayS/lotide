@@ -1,0 +1,29 @@
+{
+  "name": "@robertservado/lotide",
+  "version": "1.0.0",
+  "description": "lotide",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArjayS/lotide.git"
+  },
+  "author": "Robert Servado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArjayS/lotide/issues"
+  },
+  "homepage": "https://github.com/ArjayS/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  },
+  "dependencies": {
+    "my-package": "0.0.0"
+  }
+}
